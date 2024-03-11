@@ -6,7 +6,7 @@
     <title>Login Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body>
+<body class="container">
     <h1>Sign In</h1>
     <label>Email: </label><input type="email" name="email"><br>
     <label>Password: </label><input type="password" name="pass"><br>
