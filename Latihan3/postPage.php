@@ -3,11 +3,13 @@ if(isset($_POST['btnSubmit'])){
     $nama = $_POST['name'];
     $email = $_POST['email'];
     $pass = $_POST['pw'];
-    $tl = $_POST['bd'];
+    $tl = date_create($_POST['bd']);
+    $tanggal = date_format($tl, "l, d F Y");
     $alamat = $_POST['address'];
     $telp = $_POST['no'];
     $jk = $_POST['gen'];
     $ps = $_POST['mjr'];
+
 }
 ?>
 <!DOCTYPE html>
@@ -21,13 +23,32 @@ if(isset($_POST['btnSubmit'])){
 </head>
 <body class="container">
     <h1>Your Bio</h1>
-    <label>Name: </label><?php echo $nama?><br>
-    <label>E-Mail: </label><?php echo $email?><br>
-    <label>Password: </label><?php echo $pass?><br>
-    <label>Birthdate: </label><?php echo $tl?><br>
-    <label>Address: </label><?php echo $alamat?><br>
-    <label>Gender: </label><?php echo $jk?><br>
-    <label>Major/Course: </label><?php echo $ps?><br>
+    <div class="row">
+        <div class="col-6">
+            <div class="row my-2 g-2">
+                <label>Name: </label><?php echo $nama?><br>
+            </div>
+            <div class="row my-2 g-2">
+                <label>E-Mail: </label><?php echo $email?><br>
+            </div>
+            <div class="row my-2 g-2">
+                <label>Password: </label><?php echo $pass?><br>
+            </div>
+            <div class="row my-2 g-2">
+                <label>Birthdate: </label><?php echo $tanggal?><br>
+            </div>
+            <div class="row my-2 g-2">
+                <label>Address: </label><?php echo $alamat?><br>
+            </div>
+            <div class="row my-2 g-2">
+                <label>Gender: </label><?php echo $jk?><br>
+            </div>
+            <div class="row my-2 g-2">
+                <label>Major/Course: </label><?php echo $ps?><br>
+            </div>
+        </div>
+        <div class="col-6 text-center">Buat space iklan</div>
+    </div>
     <p>You'll be directed to Login page...</p>
     <?php
     echo '<meta http-equiv="Refresh" content="5; URL=login.php">';
