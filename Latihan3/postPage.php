@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['Sign In'])){
+if(isset($_POST['Sign Up'])){
     $nama = $_POST['name'];
     $email = $_POST['email'];
     $pass = $_POST['pw'];
