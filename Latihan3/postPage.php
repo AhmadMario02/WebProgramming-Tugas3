@@ -25,31 +25,32 @@ if(isset($_POST['btnSubmit'])){
     <h1>Your Bio</h1>
     <div class="row">
         <div class="col-6">
-            <div class="row my-2 g-2">
-                <label>Name: </label><?php echo $nama?><br>
+            <div class="row my-2">
+                <p>Name: <?php echo $nama?></p>
             </div>
-            <div class="row my-2 g-2">
-                <label>E-Mail: </label><?php echo $email?><br>
+            <div class="row my-2">
+                <p>E-Mail: <?php echo $email?></p>
             </div>
-            <div class="row my-2 g-2">
-                <label>Password: </label><?php echo $pass?><br>
+            <div class="row my-2">
+                <p>Password: <?php echo $pass?></p>
             </div>
-            <div class="row my-2 g-2">
-                <label>Birthdate: </label><?php echo $tanggal?><br>
+            <div class="row my-2">
+                <p>Birthdate: <?php echo $tanggal?></p>
             </div>
-            <div class="row my-2 g-2">
-                <label>Address: </label><?php echo $alamat?><br>
+            <div class="row my-2">
+                <p>Address: <?php echo $alamat?></p>
             </div>
-            <div class="row my-2 g-2">
-                <label>Gender: </label><?php echo $jk?><br>
+            <div class="row my-2">
+                <p>Gender: <?php echo $jk?></p>
             </div>
-            <div class="row my-2 g-2">
-                <label>Major/Course: </label><?php echo $ps?><br>
+            <div class="row my-2">
+                <p>Major/Course: <?php echo $ps?></p>
             </div>
         </div>
-        <div class="col-6 text-center">Buat space iklan</div>
+        <div class="col-6 text-center">
+        <p>You'll be directed to Login page...</p>
+        </div>
     </div>
-    <p>You'll be directed to Login page...</p>
     <?php
     echo '<meta http-equiv="Refresh" content="5; URL=login.php">';
     ?>
