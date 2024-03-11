@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['Sign Up'])){
+if(isset($_POST['btnSubmit'])){
     $nama = $_POST['name'];
     $email = $_POST['email'];
     $pass = $_POST['pw'];
@@ -32,9 +32,7 @@ if(isset($_POST['Sign Up'])){
     <?php
     echo '<meta http-equiv="Refresh" content="5; URL=login.php">';
     ?>
-    <script>
-        swal("Nicely Done!", "Your account has been signed up!", "success");
-    </script>
+    <script>swal("Nicely Done!", "Your account has been signed up!", "success");</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@523distjsbootstrapbundleminjs" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
